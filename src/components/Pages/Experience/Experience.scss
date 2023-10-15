@@ -1,0 +1,39 @@
+.experience-container{
+    height:91vh;
+    padding-top: 50px;
+    .title{
+        margin-bottom: 50px;
+    }
+    .title::after{
+        content: "EXPERIENCE";
+        position: absolute;
+        transform: scaleY(-1);
+        color: #DAFFFB;
+        left: 47%;
+        bottom: -30px;
+        z-index: -2;
+    }
+    .experience-content{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        .content__box{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 5px;
+            .content__box-img{
+                padding: 15px;
+                img{
+                    width: 100%;
+                }
+            }
+            .content__box-flex{
+                background-color:#176B87;
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.about-container{
+    padding-top: 90px;
+    height: 91vh;
+    .title {
+        margin-bottom: 90px;
+        color: #2c2c2c;
+    }
+    .title::after{
+        content: "ABOUT";
+        position: absolute;
+        transform: scaleY(-1);
+        color: #DAFFFB;
+        left: 47%;
+        bottom: -30px;
+        z-index: -2;
+    }
+    .about-content{
+        display: flex;
+        gap: 20px;
+        .about-content__left{
+            flex: 1;
+            // background-color: #fefefe;
+            border-radius: 10px;
+            color: #414141;
+            padding: 20px;
+            text-align: justify;
+            h2{
+                color: #04364A;
+            }
+            p{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+        .about-content__right{
+            flex: 1;
+            // background-color: #fefefe;
+            text-align: justify;
+            border-radius: 10px;
+            color: #414141;
+            padding: 20px;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.skills-container{
+    height: 91vh;
+    padding-top: 100px;
+    .title{
+        margin-bottom: 90px;
+    }
+    .title::after{
+        content: "SKILLS";
+        position: absolute;
+        transform: scaleY(-1);
+        color: #DAFFFB;
+        left: 47%;
+        bottom: -30px;
+        z-index: -2;
+    }
+    .skills-content{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .box-item{
+            width: 170px;
+            height: 170px;
+            background-color: #fffefe;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            box-shadow: 2px 2px 2px 2px #a8a8a8;
+
+            .img-logo{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .box-item::after{
+            content: '';
+            position: absolute;
+            background-color: red;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            border-radius: 50%;
+            transform: translateY(-10%);
+            transition: .4s;
+        }
+        .box-item:hover::after{
+            content: '70%';
+            background-color: black;
+            transform: translateY(0);
+            opacity: 0.7;
+            line-height: 180px;
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+        .box-item:nth-child(1):hover::after{
+            content: '90%';
+        }
+        .box-item:nth-child(3):hover::after{
+            content: '85%';
+        }
+        .box-item:nth-child(4):hover::after{
+            content: '85%';
+        }
+        .box-item:nth-child(5):hover::after{
+            content: '70%';
+        }
+    }
+}

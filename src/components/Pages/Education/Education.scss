@@ -1,0 +1,39 @@
+.education-container{
+    height: 91vh;
+    padding-top: 50px;
+    .title::after{
+        content: "EDUCATION";
+        position: absolute;
+        transform: scaleY(-1);
+        color: #DAFFFB;
+        left: 47%;
+        bottom: -30px;
+        z-index: -2;
+    }
+    .education-content{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        .education-content__left{
+            width: 40%;
+            margin: auto;
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-size: 20px;
+                    line-height: 50px;
+                }
+            }
+        }
+        .education-content__right{
+            width: 35%;
+            margin: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
