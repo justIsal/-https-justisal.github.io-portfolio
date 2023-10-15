@@ -44,19 +44,19 @@ const Sidebar = ({children})=> {
     ]
     return(
         <div className="container">
-            <sidebar className="sidebar-container">
+            <div className="sidebar-container">
                 <div className="sidebar__logo">
                     <img src={Logo} alt="logo" />
                     <p>ツァルマン</p>
                 </div>
                 <ul className="sidebar__navItem">
                     {menuItem.map((item,index)=> (
-                        <NavLink to={item.path} className="sidebar__navList">
+                        <NavLink to={item.path} className="sidebar__navList" key={index}>
                             {item.icon} {item.name}
                         </NavLink>
                     ))}
                 </ul>
-            </sidebar>
+            </div>
             <main className="content-container">
                 {children}
             </main>

@@ -1,5 +1,4 @@
 import About from "./components/Pages/About/About"
-import Awards from "./components/Pages/Awards/Awards"
 import Education from "./components/Pages/Education/Education"
 import Experience from "./components/Pages/Experience/Experience"
 import Home from "./components/Pages/Home/Home"
@@ -15,10 +14,6 @@ export const Router = [
     {
         path: "/about",
         element: <About />
-    },
-    {
-        path: "/awards",
-        element: <Awards />
     },
     {
         path: "/experience",
